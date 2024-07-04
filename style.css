@@ -7,92 +7,88 @@
     font-family: "Outfit";
 }
 
-@media (min-width: 300px) and (max-width: 799px) {
-    body {
+body {
+    background-color: hsl(212, 45%, 89%);
+}
+
+div {
+    vertical-align: top;
+}
+
+
+@media (min-width: 300px) and (max-width: 450px) {
+    .container {
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
-        background-color:  hsl(212, 45%, 89%);
+        flex-direction: column;
+        flex: 1;
     }
-    
-    .starting-sentence {
-        width: 320px;
-        border: 2px solid rgba(255, 255, 255, .2);
-        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-        border-radius: 20px;
-        padding: 69px 19px 25px ;
-        background: #fff;
-    }
-    
-    .starting-sentence img {
-        position: relative;
-        top: -50px;
-        width: 281px;
+
+    img {
+        height: 290px;
+        width: 290px;
         border-radius: 10px;
-        margin-bottom: 5px;
     }
-    
-    .starting-sentence .bold {
-        position: relative;
-        top: -35px;
+
+    .card {
+        width: 330px;
+        background-color: white;
+        border-radius: 15px;
+        padding: 20px;
         text-align: center;
+    }
+
+    .first-paragraph {
         font-weight: 700;
-        margin-bottom: 10px;
-        font-size: 25px;
+        padding: 15px;
+        font-size: 22px; 
     }
-    
-    .starting-sentence .bold2 {
-        position: relative;
-        top: -23px;
-        text-align: center;
+
+    .second-paragraph {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 17px;
         color: hsl(220, 15%, 55%);
+        padding-bottom: 20px;
     }
 }
 
-@media (min-width: 800px){
-    body {
+@media (min-width: 451px) {
+    .container {
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
-        background-color:  hsl(212, 45%, 89%);
+        flex-direction: column;
+        flex: 1;
     }
-    
-    .starting-sentence {
-        height: 530px;
-        width: 320px;
-        border: 2px solid rgba(255, 255, 255, .2);
-        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+
+    img {
+        height: 300px;
+        width: 300px;
+        border-radius: 10px;
+    }
+
+    .card {
+        width: 340px;
+        background-color: white;
         border-radius: 15px;
-        padding: 30px 34px;
-        background: #fff;
-    }
-    
-    .starting-sentence img {
-        position: relative;
-        width: 275px;
-        border-radius: 8px;
-        right: 13px;
-        bottom: 10px;
-    }
-    
-    .starting-sentence .bold {
+        padding: 20px;
         text-align: center;
-        font-weight: 680;
-        margin-top: 15px;
-        margin-bottom: 20px;
+    }
+
+    .first-paragraph {
+        font-weight: 700;
+        padding: 20px;
         font-size: 22px;
     }
-    
-    .starting-sentence .bold2 {
-        margin-top: 35px;
-        text-align: center;
+
+    .second-paragraph {
         font-weight: 400;
-        font-size: 16px;
+        font-size: 17px;
         color: hsl(220, 15%, 55%);
+        padding-bottom: 20px;
     }
 }
 
